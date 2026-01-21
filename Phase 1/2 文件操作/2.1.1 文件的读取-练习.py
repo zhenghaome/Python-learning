@@ -1,4 +1,4 @@
-f = open("D:/Trivial Things/Python-learning/Phase 1/文件操作/word.txt", "r", encoding = "utf-8")
+f = open("/Phase 1/2 文件操作/word.txt", "r", encoding ="utf-8")
 
 # 方法一
 content = f.read()

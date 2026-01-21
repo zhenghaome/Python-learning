@@ -5,8 +5,8 @@
 同时将标记为测试的数据进行丢弃
 """
 
-f1 = open("D:/Trivial Things/Python-learning/Phase 1/文件操作/bill.txt", "r", encoding = "utf-8")
-f2 = open("D:/Trivial Things/Python-learning/Phase 1/文件操作/bill.txt.bak", "w", encoding = "utf-8")
+f1 = open("/Phase 1/2 文件操作/bill.txt", "r", encoding ="utf-8")
+f2 = open("/Phase 1/2 文件操作/bill.txt.bak", "w", encoding ="utf-8")
 
 for line in f1:
     line = line.strip()

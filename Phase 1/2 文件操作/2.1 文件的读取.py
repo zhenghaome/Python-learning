@@ -2,7 +2,7 @@
 # 语法：open(文件路径，mode，encoding)
 # 一般使用f接收open函数
 # encoding一定要用关键字传参是因为utf-8不是第三个参数，不使用关键字传参就不会传给encoding
-f = open("D:/Trivial Things/Python-learning/Phase 1/文件操作/测试.txt", "r", encoding = "utf-8")
+f = open("/Phase 1/2 文件操作/测试.txt", "r", encoding ="utf-8")
 
 
 # 读取文件
@@ -32,5 +32,5 @@ for line in f:
 f.close()
 # with open()方法：会自动关闭文件
 # 语法：with open(文件路径，mode，encoding) as f:
-with open("D:/Trivial Things/Python-learning/Phase 1/文件操作/测试.txt", "r", encoding = "utf-8") as f:
+with open("/Phase 1/2 文件操作/测试.txt", "r", encoding ="utf-8") as f:
     print(f.read()) # 会自动关闭
