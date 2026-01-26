@@ -1,3 +1,4 @@
+# 二分查照必须先排序
 def binary_search(li, val):
     left = 0
     right = len(li)-1
