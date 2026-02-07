@@ -37,5 +37,3 @@ print(df)
 val = [{'0201':'晴', '0202':'雨', '0203':'阴'}, {'0201':'开心'}]   # key自动成为columns
 df2 = pd.DataFrame(val, index = ['天气', '心情'])   # 必须要传index
 print(df2)   # 没有的值会变为NaN
-print(df2.loc['天气'])   # 用loc是标签索引，返回指定行的数据，如果没有行索引，默认0，1，2开始
-                        # iloc是位置索引
