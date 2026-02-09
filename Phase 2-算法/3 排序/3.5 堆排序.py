@@ -55,3 +55,22 @@ li = [3,5,1,7,9,4,6,0,2,8]
 heap_sort(li)
 print(li)
 # 时间复杂度：nlogn
+
+## 堆排序内置模块
+import heapq
+import random
+
+li = list(range(100))
+random.shuffle(li)
+
+heapq.heapify(li)   # 建堆（建的是小根堆）
+
+n = len(li)
+for i in range(n):
+    print(heapq.heappop(li), end=' , ')   # heappop每次往外蹦最小数，所以要循环n次
+
+my_heap = []
+heapq.heappush(my_heap, 10)   # 往堆里添加元素，并且会自动建成小根堆
+heapq.heappush(my_heap, 2)
+heapq.heappush(my_heap, 4)
+print(my_heap)
