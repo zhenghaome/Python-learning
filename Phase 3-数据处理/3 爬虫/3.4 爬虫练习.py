@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import csv
 
 # 爬取腾讯视频前50综艺榜并保存在文档里
 
