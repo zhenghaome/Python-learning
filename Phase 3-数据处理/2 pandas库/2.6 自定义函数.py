@@ -23,5 +23,5 @@ df[6] = df.apply(add_column, axis = 1)   # 加一列，这一列的值是第一�
 print(df)
 
 # 自定义函数（合并版）
-count = df.apply(lambda row: row.max() - row.min(), axis = 1)   #计算每一行最大值与最小值之差
+count = df.apply(lambda row: row.max() - row.min(), axis = 1)   # 计算每一行最大值与最小值之差
 print(count)
