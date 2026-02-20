@@ -5,7 +5,7 @@ def thread_job():
     print('这是新添加的线程')
 
 def main():
-    added_thread = threading.Thread(target = thread_job)
+    added_thread = threading.Thread(target = thread_job)   # 添加线程
     added_thread.start()   # 启动线程
 
     print(threading.active_count())   # 算一下现在有多少个激活了的线程
