@@ -8,9 +8,9 @@ response = requests.get('https://v.qq.com/biu/ranks/?t=hotsearch&channel=10', he
 response.encoding = 'utf-8'   # 解决中文乱码问题
 content = response.text
 
-soup = BeautifulSoup(content, 'lxml')   # lxml 比 html.parser 快
+soup = BeautifulSoup(content, 'html.parser')   # lxml 比 html.parser 快
 
-all_names = soup.findAll('a', attrs = {'class' : 'name'})
+all_names = soup.find_all('a', attrs = {'class' : 'name'})
 all_ranks = soup.find_all('span', attrs = {'class' : 'num'})
 
 f = open('tx name.txt', 'w', encoding = 'utf-8')
